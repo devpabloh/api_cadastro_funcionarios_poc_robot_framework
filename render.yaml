@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: api-cadastro-funcionarios
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        value: file:./dev.db
+    disk:
+      name: data
+      mountPath: /data
+      sizeGB: 1
