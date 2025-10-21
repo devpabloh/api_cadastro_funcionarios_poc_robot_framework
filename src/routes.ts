@@ -10,7 +10,7 @@ routes.get("/funcionario", funcionariosController.findAll);
 
 routes.get("/funcionario/:id", funcionariosController.findById);
 
-routes.put("/funcionario/:id", funcionariosController.Update);
+routes.put("/funcionario/:id", funcionariosController.update);
 
 routes.delete("/funcionario/:id", funcionariosController.delete);
 
